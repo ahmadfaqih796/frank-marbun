@@ -5,15 +5,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/admin/root.css">
-	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/akun/login.css">
+	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/root.css">
+	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/login.css">
 	<title><?= $judul; ?></title>
 </head>
 
 <body>
 	<!-- particles.js container -->
-	<div id="particles-js"></div>
-	<div class="card">
+	<main class="tampilan-login">
 		<!-- cek pesan notifikasi -->
 		<?php
 		if (!empty(session()->getFlashdata('gagal'))) {
@@ -26,27 +25,22 @@
 				<?= session()->getFlashdata('pesan'); ?>
 			</div>
 		<?php } ?>
-		<form action="login/cek_login" method="POST">
+		<form action="login/cek_login" method="POST" class="card-login">
+			<h1>Login</h1>
 			<img src="<?= base_url(); ?>/assets/gambar/atribut/admin.png" alt="">
-
 			<div class="input-group">
-				<input id="username" type="username" name="username" autocomplete="off" required autofocus />
-				<span>Username</span>
+				<label for="username">Username</label>
+				<input id="username" type="text" name="username" autocomplete="off" required autofocus />
 			</div>
 			<div class="input-group">
+				<label for="password">Password</label>
 				<input type="password" name="password" id="password" autocomplete="off" required>
-				<span>Password</span>
-			</div>
-			<div class="input-checkbox">
-				<input type="checkbox" onclick="tampil_Password()">
-				<span>Tampilkan Password</span>
 			</div>
 			<div class="input-group">
 				<input type="submit" value="Login">
 			</div>
 		</form>
-
-	</div>
+	</main>
 	<script src="<?= base_url(); ?>/assets/js/lihat password.js"></script>
 	<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
 	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
