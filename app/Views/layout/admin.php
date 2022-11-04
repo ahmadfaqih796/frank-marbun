@@ -54,7 +54,7 @@
 			<li><a href="<?php base_url() ?>/admin/ppdb/pembayaran"><i class="fas fa-money-bill"></i> Pembayaran</a></li>
 			<li><a href="<?php base_url() ?>/admin/laporan"><i class="fas fa-file"></i> Laporan</a></li>
 			<li><a href="<?php base_url() ?>/admin/berita"><i class="fas fa-newspaper"></i> Berita</a></li>
-			<li><a href=" <?php base_url() ?>/admin/login/logout"><i class="fas fa-arrow-left"></i> Logout</a></li>
+			<li><a href=" <?php base_url() ?>/Admin/Login/logout"><i class="fas fa-arrow-left"></i> Logout</a></li>
 		</ul>
 		<div class="menu-toggle">
 			<input type="checkbox">
