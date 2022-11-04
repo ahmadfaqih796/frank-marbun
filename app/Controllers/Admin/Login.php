@@ -7,6 +7,11 @@ use App\Models\AdminModel;
 
 class Login extends BaseController
 {
+	public function __construct()
+	{
+		helper('form');
+		$this->adminModel = new AdminModel();
+	}
 	public function index()
 	{
 		$data = [
@@ -24,11 +29,11 @@ class Login extends BaseController
 		if ($cek) {
 			session()->set('id', $cek['id']);
 			session()->set('username', $cek['username']);
-			session()->set('nama', $cek['nama']);
-			return redirect()->to(base_url('Admin/PPDB'));
+			session()->set('name', $cek['name']);
+			return redirect()->to(base_url('Admin/Beranda'));
 		} else {
 			session()->setFlashdata('gagal', 'username atau password salah');
-			return redirect()->to(base_url('Admin/login'));
+			return redirect()->to(base_url('Admin/Login'));
 		}
 	}
 	public function logout()

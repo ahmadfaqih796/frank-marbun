@@ -25,7 +25,7 @@
 				<?= session()->getFlashdata('pesan'); ?>
 			</div>
 		<?php } ?>
-		<form action="login/cek_login" method="POST" class="card-login">
+		<form action="Login/cek_login" method="POST" class="card-login">
 			<h1>Login</h1>
 			<img src="<?= base_url(); ?>/assets/gambar/atribut/admin.png" alt="">
 			<div class="input-group">
