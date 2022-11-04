@@ -1,11 +1,14 @@
-:root{
-	--primary: salmon;
-	--surface: #fff;
+:root {
+  --primary: #033357;
+  --p-light: #3b5c84;
+  --p-dark: #000b2e;
+  --surface: #fff;
+  --text-color: #f0b60c;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }

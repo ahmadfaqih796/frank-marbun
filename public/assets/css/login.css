@@ -8,7 +8,7 @@
 .img-login {
   width: 70%;
   display: flex;
-	align-items: center;
+  align-items: center;
 }
 .img-login img {
   width: 100%;
@@ -18,13 +18,13 @@
 .tampilan-login section {
   width: 30%;
   height: 100vh;
-	background-color: var(--surface);
-	display: flex;
-	align-items: center;
+  background-color: var(--surface);
+  display: flex;
+  align-items: center;
 }
 .tampilan-login .card-login {
   align-items: center;
-	margin: 0 auto;
+  margin: 0 auto;
   background-color: var(--surface);
   width: 300px;
   border-radius: 0.4rem;
@@ -33,12 +33,12 @@
 .card-login h1 {
   text-align: center;
   margin: 1rem 0;
-	font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 .card-login img {
-	width: 80px;
-	display: block;
-	margin: 0.7rem auto;
+  width: 80px;
+  display: block;
+  margin: 0.7rem auto;
 }
 .card-login .input-group {
   display: flex;
@@ -56,7 +56,7 @@
   border: 2px solid var(--primary);
 }
 .card-login .input-group input[type="submit"] {
-  background-color: sandybrown;
+  background-color: var(--p-light);
   transition: all 0.5s;
   margin: 1rem 0;
   color: var(--surface);
@@ -64,15 +64,18 @@
   font-weight: 700;
 }
 .card-login .input-group input[type="submit"]:hover {
-  background-color: #fb7601;
+  background-color: var(--p-dark);
 }
 
-@media screen and (max-width:750px) {
-	.img-login {
-		display: none;
-	}
-	.tampilan-login section {
-		width: 100%;
-		background-color: transparent;
-	}
+@media screen and (max-width: 750px) {
+  .img-login {
+    display: none;
+  }
+  .tampilan-login section {
+    width: 100%;
+    background-color: transparent;
+  }
+  .tampilan-login .card-login {
+    padding: 2rem;
+  }
 }
