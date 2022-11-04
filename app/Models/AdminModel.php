@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class AdminLogin extends Model
+class AdminModel extends Model
 {
 	protected $DBGroup          = 'default';
 	protected $table            = 'admin';
