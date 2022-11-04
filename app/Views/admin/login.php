@@ -11,38 +11,44 @@
 </head>
 
 <body>
-	<!-- particles.js container -->
 	<main class="tampilan-login">
-		<!-- cek pesan notifikasi -->
-		<?php
-		if (!empty(session()->getFlashdata('gagal'))) {
-			echo session()->getFlashdata('gagal');
-		}
-		if (session()->getFlashdata('pesan')) {
-		?>
-			<div class="alert sukses">
-				<span class="closebtn">&times;</span>
-				<?= session()->getFlashdata('pesan'); ?>
+		<div class="img-login">
+			<img src="<?= base_url(); ?>/assets/gambar/login.png" alt="">
+		</div>
+		<section>
+			<div class="card-login">
+				<h1>Login</h1>
+				<img src="<?= base_url(); ?>/assets/gambar/user.png" alt="">
+				<!-- cek pesan notifikasi -->
+				<?php
+				if (!empty(session()->getFlashdata('gagal'))) {
+					echo session()->getFlashdata('gagal');
+				}
+				if (session()->getFlashdata('pesan')) {
+				?>
+					<div class="alert sukses">
+						<span class="closebtn">&times;</span>
+						<?= session()->getFlashdata('pesan'); ?>
+					</div>
+				<?php } ?>
+				<form action="<?= base_url(); ?>/Admin/Login/cek_login" method="POST">
+					<img src="<?= base_url(); ?>/assets/gambar/atribut/admin.png" alt="">
+					<div class="input-group">
+						<label for="username">Username</label>
+						<input id="username" type="text" name="username" autocomplete="off" required autofocus />
+					</div>
+					<div class="input-group">
+						<label for="password">Password</label>
+						<input type="password" name="password" id="password" autocomplete="off" required>
+					</div>
+					<div class="input-group">
+						<input type="submit" value="Login">
+					</div>
+				</form>
 			</div>
-		<?php } ?>
-		<form action="Login/cek_login" method="POST" class="card-login">
-			<h1>Login</h1>
-			<img src="<?= base_url(); ?>/assets/gambar/atribut/admin.png" alt="">
-			<div class="input-group">
-				<label for="username">Username</label>
-				<input id="username" type="text" name="username" autocomplete="off" required autofocus />
-			</div>
-			<div class="input-group">
-				<label for="password">Password</label>
-				<input type="password" name="password" id="password" autocomplete="off" required>
-			</div>
-			<div class="input-group">
-				<input type="submit" value="Login">
-			</div>
-		</form>
+		</section>
 	</main>
 	<script src="<?= base_url(); ?>/assets/js/lihat password.js"></script>
-	<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
 </body>
 
 </html>

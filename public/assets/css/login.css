@@ -2,45 +2,77 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--primary);
+  display: flex;
+  justify-content: space-evenly;
+}
+.img-login {
+  width: 70%;
+  display: flex;
+	align-items: center;
+}
+.img-login img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.tampilan-login section {
+  width: 30%;
+  height: 100vh;
+	background-color: var(--surface);
+	display: flex;
+	align-items: center;
 }
 .tampilan-login .card-login {
+  align-items: center;
+	margin: 0 auto;
   background-color: var(--surface);
   width: 300px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 0.4rem;
   padding: 1rem;
 }
-.card-login h1{
-	text-align: center;
-	margin: 1rem 0;
+.card-login h1 {
+  text-align: center;
+  margin: 1rem 0;
+	font-size: 2.5rem;
+}
+.card-login img {
+	width: 80px;
+	display: block;
+	margin: 0.7rem auto;
 }
 .card-login .input-group {
   display: flex;
   flex-direction: column;
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
-.card-login .input-group label{
-	margin-bottom: 0.5rem;
+.card-login .input-group label {
+  margin-bottom: 0.5rem;
 }
 .card-login .input-group input[type="text"],
 .card-login .input-group input[type="password"],
 .card-login .input-group input[type="submit"] {
   border-radius: 0.4rem;
   padding: 0.4rem;
-	border: 2px solid var(--primary);
+  border: 2px solid var(--primary);
 }
 .card-login .input-group input[type="submit"] {
   background-color: sandybrown;
-	transition: all 0.5s;
-	margin: 1rem 0;
-	color: var(--surface);
-	font-size: 1.2rem;
-	font-weight: 700;
+  transition: all 0.5s;
+  margin: 1rem 0;
+  color: var(--surface);
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 .card-login .input-group input[type="submit"]:hover {
   background-color: #fb7601;
-	
+}
+
+@media screen and (max-width:750px) {
+	.img-login {
+		display: none;
+	}
+	.tampilan-login section {
+		width: 100%;
+		background-color: transparent;
+	}
 }

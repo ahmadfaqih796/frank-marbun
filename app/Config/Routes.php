@@ -36,7 +36,7 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Admin\Login::index');
 // Login Admin
 $routes->get('Admin/Login', 'Admin\Login::index');
 $routes->post('Admin/Login/cek_login', 'Admin\Login::cek_login');
