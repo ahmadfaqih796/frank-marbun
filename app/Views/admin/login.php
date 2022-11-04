@@ -43,8 +43,6 @@
 	</main>
 	<script src="<?= base_url(); ?>/assets/js/lihat password.js"></script>
 	<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-	<script src="<?= base_url(); ?>/assets/js/admin/particles.js"></script>
 </body>
 
 </html>

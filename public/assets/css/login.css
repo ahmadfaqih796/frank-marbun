@@ -1,7 +1,7 @@
 .tampilan-login {
   width: 100vw;
   height: 100vh;
-  background-color: salmon;
+  background-color: var(--primary);
 }
 .tampilan-login .card-login {
   background-color: var(--surface);
