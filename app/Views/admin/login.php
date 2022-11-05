@@ -17,13 +17,8 @@
 		</div>
 		<section>
 			<div class="card-login">
-				<h1>Login</h1>
-				<img src="<?= base_url(); ?>/assets/gambar/user.png" alt="">
 				<!-- cek pesan notifikasi -->
 				<?php
-				if (!empty(session()->getFlashdata('gagal'))) {
-					echo session()->getFlashdata('gagal');
-				}
 				if (session()->getFlashdata('pesan')) {
 				?>
 					<div class="alert sukses">
@@ -31,6 +26,8 @@
 						<?= session()->getFlashdata('pesan'); ?>
 					</div>
 				<?php } ?>
+				<h1>Login</h1>
+				<img src="<?= base_url(); ?>/assets/gambar/user.png" alt="">
 				<form action="<?= base_url(); ?>/Admin/Login/cek_login" method="POST">
 					<img src="<?= base_url(); ?>/assets/gambar/atribut/admin.png" alt="">
 					<div class="input-group">
@@ -41,6 +38,13 @@
 						<label for="password">Password</label>
 						<input type="password" name="password" id="password" autocomplete="off" required>
 					</div>
+					<!-- cek pesan notifikasi -->
+					<?php
+					if (!empty(session()->getFlashdata('gagal'))) { ?>
+						<div class="error">
+							<?= session()->getFlashdata('gagal'); ?>
+						</div>
+					<?php } ?>
 					<div class="input-group">
 						<input type="submit" value="Login">
 					</div>

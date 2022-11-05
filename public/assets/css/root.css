@@ -4,6 +4,7 @@
   --p-dark: #000b2e;
   --surface: #fff;
   --text-color: #f0b60c;
+	--error: #cc0000;
 }
 
 * {
@@ -11,4 +12,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.error {
+	color: var(--error);
+	text-align: center;
 }
