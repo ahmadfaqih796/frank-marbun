@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/root.css">
 	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/login.css">
+	<script src="https://kit.fontawesome.com/8484f65b47.js" crossorigin="anonymous"></script>
 	<title><?= $judul; ?></title>
 </head>
 
@@ -32,11 +33,17 @@
 					<img src="<?= base_url(); ?>/assets/gambar/atribut/admin.png" alt="">
 					<div class="input-group">
 						<label for="username">Username</label>
-						<input id="username" type="text" name="username" autocomplete="off" required autofocus />
+						<div class="input">
+							<i class="fa-solid fa-user"></i>
+							<input id="username" type="text" name="username" autocomplete="off" required autofocus />
+						</div>
 					</div>
 					<div class="input-group">
 						<label for="password">Password</label>
-						<input type="password" name="password" id="password" autocomplete="off" required>
+						<div class="input">
+							<i class="fa-solid fa-key"></i>
+							<input type="password" name="password" id="password" autocomplete="off" required>
+						</div>
 					</div>
 					<!-- cek pesan notifikasi -->
 					<?php

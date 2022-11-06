@@ -7,24 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="icon" href="<?= base_url() ?>/assets/gambar/atribut/icon.ico">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/admin/navigasi.css">
-	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/admin/root.css">
-	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/admin/konten.css">
-	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/admin/pembayaran.css">
-	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/admin/pengaturan.css">
-	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/admin/form.css">
-	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/admin/tabel.css">
-	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/admin/header.css">
-	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/admin/halaman.css">
-	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/admin/sidebar.css">
-	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/admin/footer.css">
-	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/admin/gambar-slider.css">
-	<script src="<?php base_url() ?>/assets/js/fontawesome.js"></script>
+	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/admin.css">
+	<link rel="stylesheet" href="<?php base_url() ?>/assets/css/root.css">
+	<script src="https://kit.fontawesome.com/8484f65b47.js" crossorigin="anonymous"></script>
 	<title><?= $judul; ?></title>
-
 </head>
 
 <body>
@@ -47,14 +33,14 @@
 		</script>
 	<?php } ?>
 
-	<nav>
+	<nav class="nav-admin">
 		<ul>
 			<li><a href="<?php base_url() ?>/admin/ppdb"><i class="fas fa-house-user"></i> Beranda</a></li>
 			<li><a href="<?php base_url() ?>/admin/ppdb/santri"><i class="fas fa-id-card"></i> Santri</a></li>
 			<li><a href="<?php base_url() ?>/admin/ppdb/pembayaran"><i class="fas fa-money-bill"></i> Pembayaran</a></li>
 			<li><a href="<?php base_url() ?>/admin/laporan"><i class="fas fa-file"></i> Laporan</a></li>
 			<li><a href="<?php base_url() ?>/admin/berita"><i class="fas fa-newspaper"></i> Berita</a></li>
-			<li><a href=" <?php base_url() ?>/Admin/Login/logout"><i class="fas fa-arrow-left"></i> Logout</a></li>
+			<li><a href="<?php base_url() ?>/Admin/Login/logout"><i class="fas fa-arrow-left"></i> Logout</a></li>
 		</ul>
 		<div class="menu-toggle">
 			<input type="checkbox">
@@ -63,7 +49,7 @@
 			<span></span>
 		</div>
 		<div class="logo">
-			<h4>Admin Al-Khaira</h4>
+			<h4>Admin</h4>
 		</div>
 	</nav>
 

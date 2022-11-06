@@ -1,0 +1,20 @@
+.nav-admin {
+	width: 100vw;
+	height: 70px;
+	background-color: var(--primary);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.nav-admin ul {
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+}
+.nav-admin ul li {
+	list-style: none;
+}
+.nav-admin ul li a {
+	text-decoration: none;
+	color: white;
+}

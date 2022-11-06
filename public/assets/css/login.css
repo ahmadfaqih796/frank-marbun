@@ -48,14 +48,30 @@
 .card-login .input-group label {
   margin-bottom: 0.5rem;
 }
+.card-login .input-group .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	border-radius: 0.4rem;
+	padding: 0.5rem;
+	border: 2px solid var(--primary);
+}
+.card-login .input-group .input i {
+  color: var(--primary);
+  font-size: 1.5rem;
+	margin-right: 0.4rem;
+}
 .card-login .input-group input[type="text"],
-.card-login .input-group input[type="password"],
+.card-login .input-group input[type="password"] {
+  width: 100%;
+	font-size: 1rem;
+	outline: 0;
+  border-width: 0 0 0 0;
+}
 .card-login .input-group input[type="submit"] {
   border-radius: 0.4rem;
   padding: 0.4rem;
   border: 2px solid var(--primary);
-}
-.card-login .input-group input[type="submit"] {
   background-color: var(--p-light);
   transition: all 0.5s;
   margin: 1rem 0;
